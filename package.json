@@ -1,0 +1,23 @@
+{
+  "name": "buffer-alloc",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": "LinusU/buffer-alloc",
+  "scripts": {
+    "test": "standard && node test"
+  },
+  "devDependencies": {
+    "standard": "^7.1.2"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": ">= 0.12"
+  },
+  "keywords": [
+    "alloc",
+    "allocate",
+    "buffer alloc",
+    "buffer allocate",
+    "buffer"
+  ]
+}
