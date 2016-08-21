@@ -6,12 +6,12 @@
   "scripts": {
     "test": "standard && node test"
   },
+  "dependencies": {
+    "buffer-alloc-unsafe": "^0.1.0",
+    "buffer-fill": "^0.1.0"
+  },
   "devDependencies": {
     "standard": "^7.1.2"
-  },
-  "engineStrict": true,
-  "engines": {
-    "node": ">= 0.12"
   },
   "keywords": [
     "alloc",

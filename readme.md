@@ -1,6 +1,9 @@
 # Buffer Alloc
 
-A ponyfill for `Buffer.alloc`, uses native implementation if available.
+A ponyfill for `Buffer.alloc`.
+
+Works as Node.js: `v7.0.0` <br>
+Works on Node.js: `v0.10.0`
 
 ## Installation
 
@@ -35,5 +38,6 @@ Allocates a new `Buffer` of `size` bytes. If `fill` is `undefined`, the `Buffer`
 
 ## See also
 
-- [buffer-from](https://github.com/LinusU/buffer-from) A ponyfill for `Buffer.from`
 - [buffer-alloc-unsafe](https://github.com/LinusU/buffer-alloc-unsafe) A ponyfill for `Buffer.allocUnsafe`
+- [buffer-fill](https://github.com/LinusU/buffer-fill) A ponyfill for `Buffer.fill`
+- [buffer-from](https://github.com/LinusU/buffer-from) A ponyfill for `Buffer.from`

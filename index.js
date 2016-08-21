@@ -1,4 +1,7 @@
-function alloc (size, fill, encoding) {
+var bufferFill = require('buffer-fill')
+var allocUnsafe = require('buffer-alloc-unsafe')
+
+module.exports = function alloc (size, fill, encoding) {
   if (typeof size !== 'number') {
     throw new TypeError('"size" argument must be a number')
   }
@@ -7,23 +10,19 @@ function alloc (size, fill, encoding) {
     throw new RangeError('"size" argument must not be negative')
   }
 
-  var buffer = new Buffer(size)
+  var buffer = allocUnsafe(size)
 
   if (size === 0) {
     return buffer
   }
 
   if (fill === undefined) {
-    buffer.fill(0)
-    return buffer
+    return bufferFill(buffer, 0)
   }
 
   if (typeof encoding !== 'string') {
     encoding = undefined
   }
 
-  buffer.fill(fill, encoding)
-  return buffer
+  return bufferFill(buffer, fill, encoding)
 }
-
-module.exports = (Buffer.alloc || alloc)
