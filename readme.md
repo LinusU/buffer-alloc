@@ -1,6 +1,6 @@
 # Buffer Alloc
 
-A ponyfill for `Buffer.alloc`.
+A [ponyfill](https://ponyfill.com) for `Buffer.alloc`.
 
 Works as Node.js: `v7.0.0` <br>
 Works on Node.js: `v0.10.0`
