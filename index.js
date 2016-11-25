@@ -9,6 +9,10 @@ module.exports = function alloc (size, fill, encoding) {
   if (size < 0) {
     throw new RangeError('"size" argument must not be negative')
   }
+  
+  if (Buffer.alloc) {
+    return Buffer.alloc(size, fill, encoding)
+  }
 
   var buffer = allocUnsafe(size)
 
